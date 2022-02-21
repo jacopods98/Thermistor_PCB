@@ -968,8 +968,6 @@ design rules under a new name.</description>
 <contactref element="C1" pad="2"/>
 <contactref element="U3" pad="14"/>
 <contactref element="C2" pad="1"/>
-<contactref element="U1" pad="7"/>
-<contactref element="C6" pad="1"/>
 <wire x1="54.737" y1="20.955" x2="54.483" y2="25.4" width="0" layer="19" extent="1-1"/>
 <wire x1="52.355" y1="20.955" x2="54.737" y2="20.955" width="0" layer="19" extent="1-1"/>
 <wire x1="39.37" y1="7.62" x2="52.355" y2="20.955" width="0" layer="19" extent="1-1"/>
@@ -979,19 +977,13 @@ design rules under a new name.</description>
 <wire x1="17.653" y1="22.86" x2="23.79" y2="23.84" width="0" layer="19" extent="1-1"/>
 <wire x1="17.653" y1="25.4" x2="17.653" y2="22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="10.16" y1="36.83" x2="17.653" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="6.635" y1="-5.715" x2="17.653" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.143" y1="-19.05" x2="6.635" y2="-5.715" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="-5V">
 <contactref element="CON2" pad="26"/>
 <contactref element="U2" pad="4"/>
 <contactref element="C3" pad="2"/>
-<contactref element="U1" pad="4"/>
-<contactref element="C5" pad="2"/>
 <wire x1="41.783" y1="13.97" x2="46.705" y2="18.415" width="0" layer="19" extent="1-1"/>
 <wire x1="41.91" y1="7.62" x2="41.783" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="0.985" y1="-8.255" x2="41.91" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="1.143" y1="-12.7" x2="0.985" y2="-8.255" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R5" pad="1"/>
@@ -1179,10 +1171,18 @@ design rules under a new name.</description>
 <contactref element="U1" pad="6"/>
 </signal>
 <signal name="+15V">
-<contactref element="CON2" pad="22"/>
+<contactref element="U1" pad="7"/>
+<contactref element="C6" pad="1"/>
+<contactref element="CON2" pad="20"/>
+<wire x1="6.635" y1="-5.715" x2="34.29" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.143" y1="-19.05" x2="6.635" y2="-5.715" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="-15V">
-<contactref element="CON2" pad="20"/>
+<contactref element="U1" pad="4"/>
+<contactref element="C5" pad="2"/>
+<contactref element="CON2" pad="22"/>
+<wire x1="0.985" y1="-8.255" x2="36.83" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="1.143" y1="-12.7" x2="0.985" y2="-8.255" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

@@ -2353,7 +2353,6 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <parts>
 <part name="R1" library="1AKarstenLib" deviceset="R-EU_SMD" device="0805H" value="1.1ΜΩ"/>
 <part name="R2" library="1AKarstenLib" deviceset="R-EU_SMD" device="0805H" value="1ΜΩ"/>
-<part name="RE" library="1AKarstenLib" deviceset="R-EU_SMD" device="0805H"/>
 <part name="R4" library="1AKarstenLib" deviceset="R-EU_SMD" device="0805H" value="1kΩ"/>
 <part name="Q1" library="transistor-npn" deviceset="BC550*" device="" technology="C"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X16" device=""/>
@@ -2400,6 +2399,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="P+3" library="supply1" deviceset="+15V" device=""/>
 <part name="P-2" library="supply1" deviceset="-15V" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="RE" library="1AKarstenLib" deviceset="R-EU_SMD" device="1206H"/>
 </parts>
 <sheets>
 <sheet>
@@ -2411,7 +2411,6 @@ Jacopo De Santis</text>
 <instances>
 <instance part="R1" gate="G$1" x="35.56" y="99.06" rot="R90"/>
 <instance part="R2" gate="G$1" x="35.56" y="76.2" rot="R90"/>
-<instance part="RE" gate="G$1" x="53.34" y="71.12" rot="R90"/>
 <instance part="R4" gate="G$1" x="152.4" y="132.08"/>
 <instance part="Q1" gate="G$1" x="50.8" y="83.82"/>
 <instance part="JP1" gate="A" x="40.64" y="33.02"/>
@@ -2458,6 +2457,7 @@ Jacopo De Santis</text>
 <instance part="P+3" gate="1" x="127" y="104.14"/>
 <instance part="P-2" gate="1" x="132.08" y="66.04"/>
 <instance part="GND14" gate="1" x="152.4" y="71.12" rot="R90"/>
+<instance part="RE" gate="G$1" x="53.34" y="71.12" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2476,8 +2476,8 @@ Jacopo De Santis</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="E"/>
-<pinref part="RE" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="78.74" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="RE" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -2502,9 +2502,9 @@ Jacopo De Santis</text>
 <wire x1="35.56" y1="66.04" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RE" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="53.34" y1="66.04" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="RE" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>

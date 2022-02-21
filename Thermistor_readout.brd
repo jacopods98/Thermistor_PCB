@@ -187,6 +187,32 @@ between devices placed apart by 100mil &lt;/li&gt;
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
+<package name="R1206H">
+<description>&lt;b&gt;RESISTOR SMD 1206&lt;/b&gt; for hand soldering, wide inner gap, and without ground plane restrictions:
+&lt;ul type=circle&gt;
+&lt;li&gt;&lt;b&gt; TWO 20mil&lt;/b&gt; tracks between pads with 8mil clearance possible if placed 15mil of center, or&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; ONE 50mil&lt;/b&gt; track centered between pads with 8mil clearance &lt;/li&gt;
+&lt;li&gt; 16mil track with 8mil clearance&lt;br&gt;
+between devices placed side by side and 100mil apart&lt;/li&gt;
+&lt;li&gt; 50mil track with 8mil clearance&lt;br&gt;
+between devices placed end to end and 125mil apart&lt;/li&gt;
+&lt;li&gt; SMD 0805 tricky to be soldered onto this pattern&lt;/li&gt;  
+&lt;/ul&gt;&lt;p&gt;
+&lt;author&gt;July 2012 by K.F. &lt;/author&gt;</description>
+<wire x1="-0.913" y1="0.8" x2="0.888" y2="0.8" width="0.1524" layer="51"/>
+<wire x1="-0.913" y1="-0.8" x2="0.888" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-1.6002" y="0" dx="1.524" dy="1.7272" layer="1"/>
+<smd name="2" x="1.6002" y="0" dx="1.524" dy="1.7272" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.175" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-0.8763" x2="-0.9009" y2="0.8738" layer="51"/>
+<rectangle x1="0.889" y1="-0.8763" x2="1.6391" y2="0.8738" layer="51"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+</package>
 </packages>
 </library>
 <library name="con-harting">
@@ -811,7 +837,6 @@ design rules under a new name.</description>
 <element name="R5" library="1AKarstenLib" package="R0805H" value="1kΩ" x="38.1" y="22.86"/>
 <element name="R6" library="1AKarstenLib" package="R0805H" value="20kΩ" x="49.53" y="12.7"/>
 <element name="R7" library="1AKarstenLib" package="R0805H" value="20kΩ" x="38.1" y="26.67"/>
-<element name="RE" library="1AKarstenLib" package="R0805H" value="" x="55.88" y="30.48" rot="R90"/>
 <element name="U2" library="TI National Semiconductor - LF356M" package="TI_NATIONAL_SEMICONDUCTOR_LF356M_2" value="TI_NATIONAL_SEMICONDUCTOR_LF356MTI_NATIONAL_SEMICONDUCTOR_LF356M_0_2" x="49.53" y="20.32">
 <attribute name="VAULT_GUID" value="86B7F69C-A366-49BF-B4AD-C30E98E1479F" x="49.53" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="PACKAGE_DESCRIPTION" value="SOIC Narrow, 4.9 x 3.9 x 1.45mm, 8 Lead, 1.27mm Pitch" x="49.53" y="20.32" size="1.778" layer="27" display="off"/>
@@ -932,6 +957,7 @@ design rules under a new name.</description>
 </element>
 <element name="C7" library="1AKarstenLib" package="R0805H" value="" x="0" y="-31.75"/>
 <element name="C8" library="1AKarstenLib" package="R0805H" value="" x="0" y="-38.1"/>
+<element name="RE" library="1AKarstenLib" package="R1206H" value="" x="0" y="-44.45"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -944,7 +970,7 @@ design rules under a new name.</description>
 <signal name="N$2">
 <contactref element="Q1" pad="E"/>
 <contactref element="RE" pad="2"/>
-<wire x1="52.07" y1="31.75" x2="55.88" y2="31.623" width="0" layer="19" extent="1-1"/>
+<wire x1="1.6002" y1="-44.45" x2="52.07" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$24">
 <contactref element="U2" pad="6"/>
@@ -955,7 +981,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="GND">
 <contactref element="R2" pad="1"/>
-<contactref element="RE" pad="1"/>
 <contactref element="R7" pad="1"/>
 <contactref element="U3" pad="24"/>
 <contactref element="U3" pad="23"/>
@@ -986,10 +1011,20 @@ design rules under a new name.</description>
 <contactref element="C5" pad="1"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C7" pad="1"/>
-<wire x1="-1.143" y1="-31.75" x2="1.143" y2="-38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="1.143" y1="-19.05" x2="-1.143" y2="-31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.143" y1="-12.7" x2="1.143" y2="-19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="15.367" y1="22.86" x2="-1.143" y2="-12.7" width="0" layer="19" extent="1-1"/>
+<contactref element="RE" pad="1"/>
+<wire x1="48.133" y1="25.4" x2="57.023" y2="20.955" width="0" layer="19" extent="1-1"/>
+<wire x1="36.957" y1="26.67" x2="48.133" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="39.497" y1="13.97" x2="36.957" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="5.08" x2="39.497" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="23.79" y1="19.34" x2="36.957" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="23.79" y1="18.84" x2="23.79" y2="19.34" width="0" layer="19" extent="1-1"/>
+<wire x1="15.367" y1="22.86" x2="23.79" y2="19.34" width="0" layer="19" extent="1-1"/>
+<wire x1="15.367" y1="25.4" x2="15.367" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.143" y1="-12.7" x2="15.367" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="1.143" y1="-19.05" x2="-1.143" y2="-12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.143" y1="-31.75" x2="1.143" y2="-19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="1.143" y1="-38.1" x2="-1.143" y2="-31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.6002" y1="-44.45" x2="1.143" y2="-38.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="R1" pad="2"/>

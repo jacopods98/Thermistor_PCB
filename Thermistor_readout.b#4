@@ -1178,6 +1178,12 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="U1" pad="6"/>
 </signal>
+<signal name="+15V">
+<contactref element="CON2" pad="22"/>
+</signal>
+<signal name="-15V">
+<contactref element="CON2" pad="20"/>
+</signal>
 </signals>
 </board>
 </drawing>
