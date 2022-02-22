@@ -1466,12 +1466,6 @@ Created by Upverter.com</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="-5V">
-<wire x1="-1.27" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="-5V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="+15V">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -1507,19 +1501,6 @@ Created by Upverter.com</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="-5V" prefix="P-">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="-5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -2364,7 +2345,6 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
-<part name="P-1" library="supply1" deviceset="-5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
@@ -2400,6 +2380,12 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="P-2" library="supply1" deviceset="-15V" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="RE" library="1AKarstenLib" deviceset="R-EU_SMD" device="1206H"/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="C9" library="1AKarstenLib" deviceset="C-EU_SMD" device="C1206H/D"/>
+<part name="C10" library="1AKarstenLib" deviceset="C-EU_SMD" device="C1206H/D"/>
+<part name="C11" library="1AKarstenLib" deviceset="C-EU_SMD" device="C1206H/D"/>
 </parts>
 <sheets>
 <sheet>
@@ -2421,8 +2407,7 @@ Jacopo De Santis</text>
 <instance part="GND2" gate="1" x="35.56" y="63.5"/>
 <instance part="GND3" gate="1" x="53.34" y="60.96"/>
 <instance part="GND4" gate="1" x="172.72" y="58.42"/>
-<instance part="P+1" gate="1" x="152.4" y="30.48" rot="R90"/>
-<instance part="P-1" gate="1" x="152.4" y="33.02" rot="R270"/>
+<instance part="P+1" gate="1" x="170.18" y="33.02" rot="R90"/>
 <instance part="P+2" gate="1" x="35.56" y="152.4"/>
 <instance part="P+4" gate="1" x="66.04" y="38.1" rot="R90"/>
 <instance part="P+5" gate="1" x="86.36" y="12.7" rot="R180"/>
@@ -2444,8 +2429,8 @@ Jacopo De Santis</text>
 <instance part="C6" gate="G$1" x="132.08" y="142.24" rot="R90"/>
 <instance part="GND11" gate="1" x="142.24" y="142.24" rot="R90"/>
 <instance part="GND12" gate="1" x="152.4" y="114.3" rot="R90"/>
-<instance part="P+7" gate="1" x="162.56" y="25.4" rot="R90"/>
-<instance part="P-4" gate="1" x="162.56" y="27.94" rot="R270"/>
+<instance part="P+7" gate="1" x="165.1" y="27.94" rot="R90"/>
+<instance part="P-4" gate="1" x="152.4" y="30.48" rot="R270"/>
 <instance part="P+9" gate="1" x="127" y="147.32"/>
 <instance part="P+10" gate="1" x="177.8" y="124.46"/>
 <instance part="P-5" gate="1" x="177.8" y="83.82"/>
@@ -2458,6 +2443,12 @@ Jacopo De Santis</text>
 <instance part="P-2" gate="1" x="132.08" y="66.04"/>
 <instance part="GND14" gate="1" x="152.4" y="71.12" rot="R90"/>
 <instance part="RE" gate="G$1" x="53.34" y="71.12" rot="R90"/>
+<instance part="GND15" gate="1" x="175.26" y="45.72" rot="R180"/>
+<instance part="GND16" gate="1" x="160.02" y="45.72" rot="R180"/>
+<instance part="GND17" gate="1" x="170.18" y="15.24"/>
+<instance part="C9" gate="G$1" x="160.02" y="38.1"/>
+<instance part="C10" gate="G$1" x="175.26" y="40.64"/>
+<instance part="C11" gate="G$1" x="170.18" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -2566,6 +2557,20 @@ Jacopo De Santis</text>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="149.86" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="40.64" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND15" gate="1" pin="GND"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="17.78" x2="170.18" y2="20.32" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -2588,11 +2593,6 @@ Jacopo De Santis</text>
 <pinref part="U3" gate="G$0" pin="S1A"/>
 </segment>
 <segment>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<pinref part="CON2" gate="A" pin="24"/>
-<wire x1="154.94" y1="30.48" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <pinref part="U3" gate="G$0" pin="1_VDD"/>
 <wire x1="68.58" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
@@ -2610,12 +2610,14 @@ Jacopo De Santis</text>
 <wire x1="88.9" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
 <junction x="86.36" y="22.86"/>
 </segment>
-</net>
-<net name="-5V" class="0">
 <segment>
-<pinref part="P-1" gate="1" pin="-5V"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
 <pinref part="CON2" gate="A" pin="26"/>
-<wire x1="154.94" y1="33.02" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="33.02" x2="175.26" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="33.02" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="33.02" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
+<junction x="175.26" y="33.02"/>
 </segment>
 </net>
 <net name="C$1" class="0">
@@ -3029,11 +3031,6 @@ Jacopo De Santis</text>
 <wire x1="127" y1="137.16" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+7" gate="1" pin="+15V"/>
-<pinref part="CON2" gate="A" pin="20"/>
-<wire x1="165.1" y1="25.4" x2="177.8" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$0" pin="V+"/>
 <wire x1="177.8" y1="121.92" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -3052,6 +3049,14 @@ Jacopo De Santis</text>
 <pinref part="U4" gate="G$0" pin="V+"/>
 <wire x1="127" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P+7" gate="1" pin="+15V"/>
+<pinref part="CON2" gate="A" pin="22"/>
+<wire x1="167.64" y1="27.94" x2="170.18" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="27.94" x2="177.8" y2="27.94" width="0.1524" layer="91"/>
+<junction x="170.18" y="27.94"/>
+</segment>
 </net>
 <net name="-15V" class="0">
 <segment>
@@ -3062,11 +3067,6 @@ Jacopo De Santis</text>
 <wire x1="139.7" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
 <junction x="132.08" y="114.3"/>
 <pinref part="P-7" gate="1" pin="-15V"/>
-</segment>
-<segment>
-<pinref part="P-4" gate="1" pin="-15V"/>
-<pinref part="CON2" gate="A" pin="22"/>
-<wire x1="165.1" y1="27.94" x2="177.8" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$0" pin="V-"/>
@@ -3085,6 +3085,15 @@ Jacopo De Santis</text>
 <wire x1="139.7" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
 <junction x="132.08" y="71.12"/>
 <pinref part="P-2" gate="1" pin="-15V"/>
+</segment>
+<segment>
+<pinref part="P-4" gate="1" pin="-15V"/>
+<pinref part="CON2" gate="A" pin="24"/>
+<wire x1="154.94" y1="30.48" x2="160.02" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="30.48" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="30.48" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
+<junction x="160.02" y="30.48"/>
 </segment>
 </net>
 <net name="N$4" class="0">
