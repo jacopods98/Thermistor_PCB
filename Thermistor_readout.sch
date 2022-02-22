@@ -2407,7 +2407,7 @@ Jacopo De Santis</text>
 <instance part="GND2" gate="1" x="35.56" y="63.5"/>
 <instance part="GND3" gate="1" x="53.34" y="60.96"/>
 <instance part="GND4" gate="1" x="172.72" y="58.42"/>
-<instance part="P+1" gate="1" x="170.18" y="33.02" rot="R90"/>
+<instance part="P+1" gate="1" x="213.36" y="2.54" rot="R270"/>
 <instance part="P+2" gate="1" x="35.56" y="152.4"/>
 <instance part="P+4" gate="1" x="66.04" y="38.1" rot="R90"/>
 <instance part="P+5" gate="1" x="86.36" y="12.7" rot="R180"/>
@@ -2430,7 +2430,7 @@ Jacopo De Santis</text>
 <instance part="GND11" gate="1" x="142.24" y="142.24" rot="R90"/>
 <instance part="GND12" gate="1" x="152.4" y="114.3" rot="R90"/>
 <instance part="P+7" gate="1" x="165.1" y="27.94" rot="R90"/>
-<instance part="P-4" gate="1" x="152.4" y="30.48" rot="R270"/>
+<instance part="P-4" gate="1" x="154.94" y="33.02" rot="R270"/>
 <instance part="P+9" gate="1" x="127" y="147.32"/>
 <instance part="P+10" gate="1" x="177.8" y="124.46"/>
 <instance part="P-5" gate="1" x="177.8" y="83.82"/>
@@ -2443,11 +2443,11 @@ Jacopo De Santis</text>
 <instance part="P-2" gate="1" x="132.08" y="66.04"/>
 <instance part="GND14" gate="1" x="152.4" y="71.12" rot="R90"/>
 <instance part="RE" gate="G$1" x="53.34" y="71.12" rot="R90"/>
-<instance part="GND15" gate="1" x="175.26" y="45.72" rot="R180"/>
-<instance part="GND16" gate="1" x="160.02" y="45.72" rot="R180"/>
+<instance part="GND15" gate="1" x="200.66" y="17.78" rot="R180"/>
+<instance part="GND16" gate="1" x="160.02" y="50.8" rot="R180"/>
 <instance part="GND17" gate="1" x="170.18" y="15.24"/>
-<instance part="C9" gate="G$1" x="160.02" y="38.1"/>
-<instance part="C10" gate="G$1" x="175.26" y="40.64"/>
+<instance part="C9" gate="G$1" x="160.02" y="43.18"/>
+<instance part="C10" gate="G$1" x="200.66" y="10.16"/>
 <instance part="C11" gate="G$1" x="170.18" y="25.4"/>
 </instances>
 <busses>
@@ -2560,11 +2560,12 @@ Jacopo De Santis</text>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="40.64" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="45.72" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="15.24" x2="200.66" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
@@ -2611,13 +2612,13 @@ Jacopo De Santis</text>
 <junction x="86.36" y="22.86"/>
 </segment>
 <segment>
+<pinref part="CON2" gate="A" pin="1"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<pinref part="CON2" gate="A" pin="26"/>
-<wire x1="172.72" y1="33.02" x2="175.26" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="2.54" x2="200.66" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="33.02" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="33.02" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
-<junction x="175.26" y="33.02"/>
+<wire x1="200.66" y1="2.54" x2="210.82" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="2.54" x2="200.66" y2="5.08" width="0.1524" layer="91"/>
+<junction x="200.66" y="2.54"/>
 </segment>
 </net>
 <net name="C$1" class="0">
@@ -3087,13 +3088,13 @@ Jacopo De Santis</text>
 <pinref part="P-2" gate="1" pin="-15V"/>
 </segment>
 <segment>
+<pinref part="CON2" gate="A" pin="26"/>
 <pinref part="P-4" gate="1" pin="-15V"/>
-<pinref part="CON2" gate="A" pin="24"/>
-<wire x1="154.94" y1="30.48" x2="160.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="33.02" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="30.48" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="30.48" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
-<junction x="160.02" y="30.48"/>
+<wire x1="160.02" y1="33.02" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="38.1" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
+<junction x="160.02" y="33.02"/>
 </segment>
 </net>
 <net name="N$4" class="0">
