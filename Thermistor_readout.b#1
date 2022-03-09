@@ -1010,11 +1010,13 @@ design rules under a new name.</description>
 <attribute name="COMP_TYPE" value="Amplifiers" x="63.28" y="20.33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="59.724" y="20.203" size="0.6" layer="25" rot="R90"/>
 </element>
-<element name="CON1" library="con-harting" package="CON16L" value="" x="31.115" y="3.81" rot="R180">
+<element name="CON1" library="con-harting" package="CON16L" value="" x="31.115" y="3.81" smashed="yes" rot="R180">
 <attribute name="MF" value="" x="31.115" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="31.115" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="31.115" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="31.115" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="33.02" y="9.3218" size="1.778" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="41.275" y="10.16" size="1.27" layer="27" rot="R180"/>
 </element>
 </elements>
 <signals>
