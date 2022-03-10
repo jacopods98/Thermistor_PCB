@@ -3022,9 +3022,10 @@ Jacopo De Santis</text>
 <pinref part="P+7" gate="1" pin="+15V"/>
 <wire x1="157.48" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="27.94" x2="177.8" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="27.94" x2="162.56" y2="30.48" width="0.1524" layer="91"/>
 <junction x="162.56" y="27.94"/>
-<pinref part="CON1" gate="G$1" pin="12"/>
+<pinref part="CON1" gate="G$1" pin="14"/>
+<wire x1="162.56" y1="30.48" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-15V" class="0">
