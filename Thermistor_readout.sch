@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="100" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -3123,19 +3123,19 @@ Jacopo De Santis</text>
 <approved hash="104,1,132.08,73.66,U4,V-,-15V,,,"/>
 <approved hash="104,1,132.08,93.98,U4,V+,+15V,,,"/>
 <approved hash="113,1,41.8677,33.1512,JP1,,,,,"/>
-<approved hash="113,1,74.5332,29.21,C1,,,,,"/>
-<approved hash="113,1,92.71,24.5268,C2,,,,,"/>
-<approved hash="113,1,189.23,87.2332,C3,,,,,"/>
-<approved hash="113,1,184.15,121.047,C4,,,,,"/>
-<approved hash="113,1,143.51,112.633,C5,,,,,"/>
-<approved hash="113,1,133.35,143.907,C6,,,,,"/>
-<approved hash="113,1,143.51,69.4532,C7,,,,,"/>
-<approved hash="113,1,133.35,100.727,C8,,,,,"/>
-<approved hash="113,1,52.3452,71.12,RE,,,,,"/>
-<approved hash="113,1,161.687,41.91,C9,,,,,"/>
-<approved hash="113,1,208.116,21.59,C10,,,,,"/>
-<approved hash="113,1,164.843,24.13,C11,,,,,"/>
+<approved hash="113,1,74.6983,29.21,C1,,,,,"/>
+<approved hash="113,1,92.71,24.3617,C2,,,,,"/>
+<approved hash="113,1,189.23,87.3983,C3,,,,,"/>
+<approved hash="113,1,184.15,120.882,C4,,,,,"/>
+<approved hash="113,1,143.51,112.798,C5,,,,,"/>
+<approved hash="113,1,133.35,143.742,C6,,,,,"/>
+<approved hash="113,1,143.51,69.6183,C7,,,,,"/>
+<approved hash="113,1,133.35,100.562,C8,,,,,"/>
+<approved hash="113,1,161.522,41.91,C9,,,,,"/>
+<approved hash="113,1,207.938,21.59,C10,,,,,"/>
+<approved hash="113,1,164.758,24.13,C11,,,,,"/>
 <approved hash="113,1,185.42,25.5947,CON1,,,,,"/>
+<approved hash="113,1,52.3452,71.12,RE,,,,,"/>
 </errors>
 </schematic>
 </drawing>
