@@ -1613,6 +1613,48 @@ design rules under a new name.</description>
 <wire x1="63.951484375" y1="17.468515625" x2="63.915" y2="17.505" width="0.254" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="18,29,c68c06af86a9468a"/>
+<approved hash="18,29,3c5d1d2c7ccd8a9b"/>
+<approved hash="18,29,c6f83cf431637a4c"/>
+<approved hash="18,29,c691563f86216e2f"/>
+<approved hash="18,29,ea782a8bc909e5b1"/>
+<approved hash="18,29,c7127cf095f12e13"/>
+<approved hash="18,29,d2f5623ced3d5df4"/>
+<approved hash="18,29,6ca9bf36e93e3aa1"/>
+<approved hash="18,29,798d94bbc2ba2f8c"/>
+<approved hash="18,29,9510dabdf0b4bf19"/>
+<approved hash="18,29,75678d30a74e5f19"/>
+<approved hash="18,29,5279a0ee8af67861"/>
+<approved hash="18,29,614e4a7260724b4e"/>
+<approved hash="18,29,e944da3a0c233f5d"/>
+<approved hash="18,29,ae18a3a14c1ebc72"/>
+<approved hash="18,29,9034b3d933c7102a"/>
+<approved hash="18,29,9124fc397c37112a"/>
+<approved hash="18,29,b617a3ce23ce3617"/>
+<approved hash="18,29,3aecda95cc952cec"/>
+<approved hash="18,29,9520afd5b9d58320"/>
+<approved hash="18,29,ea572632a6336a56"/>
+<approved hash="18,29,422812c83972ca82"/>
+<approved hash="18,29,4e20111cc711982d"/>
+<approved hash="18,29,4e109885b28d6418"/>
+<approved hash="18,29,30ed46116c141ae8"/>
+<approved hash="18,29,79a93603e01cafb6"/>
+<approved hash="18,29,e35c0ca0daa43558"/>
+<approved hash="18,29,bc04c2e9e8e0960d"/>
+<approved hash="18,29,9af8b47c9e7bb0ff"/>
+<approved hash="18,29,b5c4ebae3da763cd"/>
+<approved hash="18,29,f28d82549454e48d"/>
+<approved hash="18,29,7da61bbf9bbffda6"/>
+<approved hash="18,29,d18780bcd6bf8784"/>
+<approved hash="18,29,a643fc9dd04476e7"/>
+<approved hash="18,29,2b08d9a58f5c7df1"/>
+<approved hash="18,29,c04cfc6be3c25f64"/>
+<approved hash="18,29,b32fc22c142f652c"/>
+<approved hash="18,29,6aa8bb3d6dc5bc50"/>
+<approved hash="18,29,ba8274175e1e908b"/>
+<approved hash="18,29,9c5ea2a288a1b65d"/>
+</errors>
 </board>
 </drawing>
 <compatibility>

@@ -2435,10 +2435,10 @@ Jacopo De Santis</text>
 <segment>
 <pinref part="U2" gate="G$0" pin="OUT"/>
 <wire x1="187.96" y1="104.14" x2="210.82" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="104.14" x2="210.82" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="104.14" x2="210.82" y2="54.356" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="10.16" x2="149.86" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="10.16" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="48.26" x2="210.82" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="10.16" x2="149.86" y2="54.356" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="54.356" x2="210.82" y2="54.356" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="132.08" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="132.08" x2="210.82" y2="104.14" width="0.1524" layer="91"/>
@@ -3112,6 +3112,31 @@ Jacopo De Santis</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,177.8,93.98,U2,V-,-15V,,,"/>
+<approved hash="104,1,177.8,114.3,U2,V+,+15V,,,"/>
+<approved hash="104,1,86.36,38.1,U3,1_VDD,+5V,,,"/>
+<approved hash="104,1,86.36,35.56,U3,2_VDD,+5V,,,"/>
+<approved hash="104,1,116.84,38.1,U3,VSS,GND,,,"/>
+<approved hash="104,1,132.08,116.84,U1,V-,-15V,,,"/>
+<approved hash="104,1,132.08,137.16,U1,V+,+15V,,,"/>
+<approved hash="104,1,132.08,73.66,U4,V-,-15V,,,"/>
+<approved hash="104,1,132.08,93.98,U4,V+,+15V,,,"/>
+<approved hash="113,1,41.8677,33.1512,JP1,,,,,"/>
+<approved hash="113,1,74.5332,29.21,C1,,,,,"/>
+<approved hash="113,1,92.71,24.5268,C2,,,,,"/>
+<approved hash="113,1,189.23,87.2332,C3,,,,,"/>
+<approved hash="113,1,184.15,121.047,C4,,,,,"/>
+<approved hash="113,1,143.51,112.633,C5,,,,,"/>
+<approved hash="113,1,133.35,143.907,C6,,,,,"/>
+<approved hash="113,1,143.51,69.4532,C7,,,,,"/>
+<approved hash="113,1,133.35,100.727,C8,,,,,"/>
+<approved hash="113,1,52.3452,71.12,RE,,,,,"/>
+<approved hash="113,1,161.687,41.91,C9,,,,,"/>
+<approved hash="113,1,208.116,21.59,C10,,,,,"/>
+<approved hash="113,1,164.843,24.13,C11,,,,,"/>
+<approved hash="113,1,185.42,25.5947,CON1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
