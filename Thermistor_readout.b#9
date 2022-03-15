@@ -853,10 +853,19 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="1AKarstenLib" package="R0805H" value="" x="18.12" y="30.07"/>
+<element name="C1" library="1AKarstenLib" package="R0805H" value="" x="18.12" y="30.07" smashed="yes">
+<attribute name="NAME" x="15.58" y="31.34" size="1.27" layer="25"/>
+<attribute name="VALUE" x="20.66" y="29.435" size="1.27" layer="27"/>
+</element>
 <element name="C10" library="1AKarstenLib" package="C1206H/D" value="" x="7.03" y="14.04"/>
-<element name="C11" library="1AKarstenLib" package="C1206H/D" value="" x="39.73" y="12.935" rot="R180"/>
-<element name="C2" library="1AKarstenLib" package="R0805H" value="" x="17.215415625" y="26.9508625" rot="R180"/>
+<element name="C11" library="1AKarstenLib" package="C1206H/D" value="" x="39.73" y="12.935" smashed="yes" rot="R180">
+<attribute name="NAME" x="41.475" y="10.635" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="43.38" y="16.51" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C2" library="1AKarstenLib" package="R0805H" value="" x="17.215415625" y="26.9508625" smashed="yes" rot="R180">
+<attribute name="NAME" x="17.215415625" y="25.6808625" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="14.675415625" y="27.5858625" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="C3" library="1AKarstenLib" package="R0805H" value="" x="84.9" y="27.08" rot="R180"/>
 <element name="C4" library="1AKarstenLib" package="R0805H" value="" x="76.675" y="36.98" rot="R90"/>
 <element name="C5" library="1AKarstenLib" package="R0805H" value="" x="68.64" y="42.08" rot="R180"/>
@@ -864,21 +873,26 @@ design rules under a new name.</description>
 <element name="C7" library="1AKarstenLib" package="R0805H" value="" x="68.88" y="17.08" rot="R180"/>
 <element name="C8" library="1AKarstenLib" package="R0805H" value="" x="62.23" y="27.22" rot="R90"/>
 <element name="C9" library="1AKarstenLib" package="C1206H/D" value="" x="57.78" y="6.9" rot="R180"/>
-<element name="CON2" library="con-harting" package="CON26L" value="" x="32.52" y="5.42" rot="R180">
+<element name="CON2" library="con-harting" package="CON26L" value="" x="32.52" y="5.42" smashed="yes" rot="R180">
 <attribute name="MF" value="" x="32.52" y="5.42" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="32.52" y="5.42" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="32.52" y="5.42" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="32.52" y="5.42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="33.79" y="10.1698" size="1.778" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="49.03" y="11.77" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP1" library="pinhead" package="2X16" value="" x="33.21" y="54.98"/>
+<element name="JP1" library="pinhead" package="2X16" value="" x="33.21" y="54.98" smashed="yes">
+<attribute name="NAME" x="31.94" y="50.535" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="12.89" y="50.535" size="1.27" layer="27"/>
+</element>
 <element name="Q1" library="transistor-npn" package="TO92-EBC" value="BC550C" x="6.465" y="31.845" smashed="yes" rot="R90">
 <attribute name="VALUE" x="4.037" y="28.305" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R1" library="1AKarstenLib" package="R0805H" value="1.1ΜΩ" x="12.375" y="30.315" smashed="yes">
-<attribute name="NAME" x="11.74" y="31.585" size="1.27" layer="25"/>
+<attribute name="NAME" x="10.47" y="27.775" size="1.27" layer="25"/>
 </element>
 <element name="R2" library="1AKarstenLib" package="R0805H" value="1ΜΩ" x="12.495" y="34.025" smashed="yes" rot="R180">
-<attribute name="NAME" x="13.13" y="32.755" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="12.495" y="36.565" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="R4" library="1AKarstenLib" package="R0805H" value="1kΩ" x="68.63" y="51.07" smashed="yes">
 <attribute name="NAME" x="67.995" y="52.34" size="1.27" layer="25"/>
@@ -893,7 +907,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="76.655" y="25.075" size="1.27" layer="25"/>
 </element>
 <element name="RE" library="1AKarstenLib" package="R1206H" value="" x="7.515" y="38.955" rot="R270"/>
-<element name="U1" library="TI National Semiconductor - LF356M" package="TI_NATIONAL_SEMICONDUCTOR_LF356M_2" value="TI_NATIONAL_SEMICONDUCTOR_LF356MTI_NATIONAL_SEMICONDUCTOR_LF356M_0_2" x="63.13" y="44.74" rot="R90">
+<element name="U1" library="TI National Semiconductor - LF356M" package="TI_NATIONAL_SEMICONDUCTOR_LF356M_2" value="TI_NATIONAL_SEMICONDUCTOR_LF356MTI_NATIONAL_SEMICONDUCTOR_LF356M_0_2" x="63.13" y="44.74" smashed="yes" rot="R90">
 <attribute name="CODE__JEITA" value="" x="63.13" y="44.74" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PIN_COUNT" value="8" x="63.13" y="44.74" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="IMPORT_TS" value="1521860174" x="63.13" y="44.74" size="1.778" layer="27" rot="R90" display="off"/>
@@ -920,8 +934,9 @@ design rules under a new name.</description>
 <attribute name="PACKAGE_TOP_MARKING" value="NSZXTT*LF356*M" x="63.13" y="44.74" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VAULT_GUID" value="86B7F69C-A366-49BF-B4AD-C30E98E1479F" x="63.13" y="44.74" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="COMP_TYPE" value="Amplifiers" x="63.13" y="44.74" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="59.574" y="44.613" size="0.6" layer="25" rot="R90"/>
 </element>
-<element name="U2" library="TI National Semiconductor - LF356M" package="TI_NATIONAL_SEMICONDUCTOR_LF356M_2" value="TI_NATIONAL_SEMICONDUCTOR_LF356MTI_NATIONAL_SEMICONDUCTOR_LF356M_0_2" x="79.28" y="30.22" rot="R90">
+<element name="U2" library="TI National Semiconductor - LF356M" package="TI_NATIONAL_SEMICONDUCTOR_LF356M_2" value="TI_NATIONAL_SEMICONDUCTOR_LF356MTI_NATIONAL_SEMICONDUCTOR_LF356M_0_2" x="79.28" y="30.22" smashed="yes" rot="R90">
 <attribute name="CODE__JEITA" value="" x="79.28" y="30.22" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PIN_COUNT" value="8" x="79.28" y="30.22" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="IMPORT_TS" value="1521860174" x="79.28" y="30.22" size="1.778" layer="27" rot="R90" display="off"/>
@@ -948,8 +963,9 @@ design rules under a new name.</description>
 <attribute name="PACKAGE_TOP_MARKING" value="NSZXTT*LF356*M" x="79.28" y="30.22" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VAULT_GUID" value="86B7F69C-A366-49BF-B4AD-C30E98E1479F" x="79.28" y="30.22" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="COMP_TYPE" value="Amplifiers" x="79.28" y="30.22" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="75.724" y="30.093" size="0.6" layer="25" rot="R90"/>
 </element>
-<element name="U3" library="Analog Devices - ADG725BSUZ" package="ANALOG_DEVICES_ADG725BSUZ_2" value="ANALOG_DEVICES_ADG725BSUZANALOG_DEVICES_ADG725BSUZ_0_2" x="27.82" y="24.05" rot="R270">
+<element name="U3" library="Analog Devices - ADG725BSUZ" package="ANALOG_DEVICES_ADG725BSUZ_2" value="ANALOG_DEVICES_ADG725BSUZANALOG_DEVICES_ADG725BSUZ_0_2" x="27.82" y="24.05" smashed="yes" rot="R270">
 <attribute name="MAX_ANALOG_SIGNAL_RANGE" value="Vss to Vdd" x="27.82" y="24.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="IMPORT_TS" value="1521844804" x="27.82" y="24.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="IMPORTED_FROM" value="vault" x="27.82" y="24.05" size="1.778" layer="27" rot="R270" display="off"/>
@@ -980,8 +996,9 @@ design rules under a new name.</description>
 <attribute name="MF" value="Analog Devices" x="27.82" y="24.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VAULT_REVISION" value="63445D66-2062-4CF5-BB4E-A8A3DC790AA5" x="27.82" y="24.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VAULT_GUID" value="7876A2FD-0DAB-484C-9F25-628C39C8E5EF" x="27.82" y="24.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="27.135" y="23.895" size="1" layer="25"/>
 </element>
-<element name="U4" library="TI National Semiconductor - LF356M" package="TI_NATIONAL_SEMICONDUCTOR_LF356M_2" value="TI_NATIONAL_SEMICONDUCTOR_LF356MTI_NATIONAL_SEMICONDUCTOR_LF356M_0_2" x="63.28" y="20.33" rot="R90">
+<element name="U4" library="TI National Semiconductor - LF356M" package="TI_NATIONAL_SEMICONDUCTOR_LF356M_2" value="TI_NATIONAL_SEMICONDUCTOR_LF356MTI_NATIONAL_SEMICONDUCTOR_LF356M_0_2" x="63.28" y="20.33" smashed="yes" rot="R90">
 <attribute name="CODE__JEITA" value="" x="63.28" y="20.33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PIN_COUNT" value="8" x="63.28" y="20.33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="IMPORT_TS" value="1521860174" x="63.28" y="20.33" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1008,6 +1025,7 @@ design rules under a new name.</description>
 <attribute name="PACKAGE_TOP_MARKING" value="NSZXTT*LF356*M" x="63.28" y="20.33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VAULT_GUID" value="86B7F69C-A366-49BF-B4AD-C30E98E1479F" x="63.28" y="20.33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="COMP_TYPE" value="Amplifiers" x="63.28" y="20.33" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="59.724" y="20.203" size="0.6" layer="25" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -1082,7 +1100,7 @@ design rules under a new name.</description>
 <via x="59.055" y="55.245" extent="1-16" drill="0.6" shape="square"/>
 <via x="72.39" y="43.18" extent="1-16" drill="0.6" shape="square"/>
 <via x="76.2" y="21.59" extent="1-16" drill="0.6" shape="square"/>
-<via x="31.75" y="11.43" extent="1-16" drill="0.6" shape="square"/>
+<via x="31.75" y="12.065" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="+5V">
 <contactref element="R1" pad="2"/>

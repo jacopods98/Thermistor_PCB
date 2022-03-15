@@ -2338,7 +2338,6 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="P+3" library="supply1" deviceset="+15V" device=""/>
 <part name="P-2" library="supply1" deviceset="-15V" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="RE" library="1AKarstenLib" deviceset="R-EU_SMD" device="1206H"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
@@ -2346,6 +2345,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="C10" library="1AKarstenLib" deviceset="C-EU_SMD" device="C1206H/D"/>
 <part name="C11" library="1AKarstenLib" deviceset="C-EU_SMD" device="C1206H/D"/>
 <part name="CON1" library="con-harting" deviceset="CON16L" device=""/>
+<part name="RE" library="1AKarstenLib" deviceset="R-EU_SMD" device="0805H"/>
 </parts>
 <sheets>
 <sheet>
@@ -2401,7 +2401,6 @@ Jacopo De Santis</text>
 <instance part="P+3" gate="1" x="127" y="104.14"/>
 <instance part="P-2" gate="1" x="132.08" y="66.04"/>
 <instance part="GND14" gate="1" x="152.4" y="71.12" rot="R90"/>
-<instance part="RE" gate="G$1" x="53.34" y="71.12" rot="R90"/>
 <instance part="GND15" gate="1" x="205.74" y="30.48" rot="R180"/>
 <instance part="GND16" gate="1" x="160.02" y="50.8" rot="R180"/>
 <instance part="GND17" gate="1" x="162.56" y="15.24"/>
@@ -2409,6 +2408,7 @@ Jacopo De Santis</text>
 <instance part="C10" gate="G$1" x="205.74" y="22.86"/>
 <instance part="C11" gate="G$1" x="162.56" y="25.4"/>
 <instance part="CON1" gate="G$1" x="185.42" y="25.4"/>
+<instance part="RE" gate="G$1" x="53.34" y="71.12" rot="R90"/>
 </instances>
 <busses>
 </busses>
