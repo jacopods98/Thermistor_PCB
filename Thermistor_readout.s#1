@@ -9,6 +9,20 @@
 <grid distance="100" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -2345,7 +2359,8 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="C10" library="1AKarstenLib" deviceset="C-EU_SMD" device="C1206H/D"/>
 <part name="C11" library="1AKarstenLib" deviceset="C-EU_SMD" device="C1206H/D"/>
 <part name="CON1" library="con-harting" deviceset="CON16L" device=""/>
-<part name="RE" library="1AKarstenLib" deviceset="R-EU_SMD" device="0805H"/>
+<part name="RE_B" library="1AKarstenLib" deviceset="R-EU_SMD" device="1206H" value="15kΩ"/>
+<part name="RE_S" library="1AKarstenLib" deviceset="R-EU_SMD" device="0805H" value="1.5kΩ"/>
 </parts>
 <sheets>
 <sheet>
@@ -2408,7 +2423,8 @@ Jacopo De Santis</text>
 <instance part="C10" gate="G$1" x="205.74" y="22.86"/>
 <instance part="C11" gate="G$1" x="162.56" y="25.4"/>
 <instance part="CON1" gate="G$1" x="185.42" y="25.4"/>
-<instance part="RE" gate="G$1" x="53.34" y="71.12" rot="R90"/>
+<instance part="RE_B" gate="G$1" x="48.26" y="71.12" rot="R90"/>
+<instance part="RE_S" gate="G$1" x="58.42" y="71.12" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2428,7 +2444,11 @@ Jacopo De Santis</text>
 <segment>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <wire x1="53.34" y1="78.74" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="RE" gate="G$1" pin="2"/>
+<pinref part="RE_B" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="RE_S" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
+<junction x="53.34" y="76.2"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -2457,7 +2477,11 @@ Jacopo De Santis</text>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="53.34" y1="66.04" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="RE" gate="G$1" pin="1"/>
+<pinref part="RE_B" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="RE_S" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
+<junction x="53.34" y="66.04"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>

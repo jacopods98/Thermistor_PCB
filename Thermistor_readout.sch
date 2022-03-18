@@ -2326,17 +2326,17 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="Analog Devices - ADG725BSUZ" deviceset="ANALOG_DEVICES_ADG725BSUZ" device="ANALOG_DEVICES_ADG725BSUZ_0_2"/>
-<part name="C1" library="1AKarstenLib" deviceset="C-EU_SMD" device="R0805H"/>
-<part name="C2" library="1AKarstenLib" deviceset="C-EU_SMD" device="R0805H"/>
-<part name="C3" library="1AKarstenLib" deviceset="C-EU_SMD" device="R0805H"/>
-<part name="C4" library="1AKarstenLib" deviceset="C-EU_SMD" device="R0805H"/>
+<part name="C1" library="1AKarstenLib" deviceset="C-EU_SMD" device="R1206H"/>
+<part name="C2" library="1AKarstenLib" deviceset="C-EU_SMD" device="R1206H"/>
+<part name="C3" library="1AKarstenLib" deviceset="C-EU_SMD" device="R1206H"/>
+<part name="C4" library="1AKarstenLib" deviceset="C-EU_SMD" device="R1206H"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="TI National Semiconductor - LF356M" deviceset="TI_NATIONAL_SEMICONDUCTOR_LF356M" device="TI_NATIONAL_SEMICONDUCTOR_LF356M_0_2"/>
-<part name="C5" library="1AKarstenLib" deviceset="C-EU_SMD" device="R0805H"/>
-<part name="C6" library="1AKarstenLib" deviceset="C-EU_SMD" device="R0805H"/>
+<part name="C5" library="1AKarstenLib" deviceset="C-EU_SMD" device="R1206H"/>
+<part name="C6" library="1AKarstenLib" deviceset="C-EU_SMD" device="R1206H"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+15V" device=""/>
@@ -2346,8 +2346,8 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="P-5" library="supply1" deviceset="-15V" device=""/>
 <part name="P-7" library="supply1" deviceset="-15V" device=""/>
 <part name="U4" library="TI National Semiconductor - LF356M" deviceset="TI_NATIONAL_SEMICONDUCTOR_LF356M" device="TI_NATIONAL_SEMICONDUCTOR_LF356M_0_2"/>
-<part name="C7" library="1AKarstenLib" deviceset="C-EU_SMD" device="R0805H"/>
-<part name="C8" library="1AKarstenLib" deviceset="C-EU_SMD" device="R0805H"/>
+<part name="C7" library="1AKarstenLib" deviceset="C-EU_SMD" device="R1206H"/>
+<part name="C8" library="1AKarstenLib" deviceset="C-EU_SMD" device="R1206H"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+15V" device=""/>
 <part name="P-2" library="supply1" deviceset="-15V" device=""/>
